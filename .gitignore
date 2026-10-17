@@ -1,0 +1,23 @@
+#Welke bestanden en mappen moeten worden genegeerd door Git zodat ze niet in de remote repository terecht komen?
+# Omgevingsvariabelen
+.env
+
+# Specifieke bestanden van de code-editor
+.vscode/
+
+# Besturingssysteem bestanden
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Tijdelijke en cache bestanden
+tmp/
+cache/
+
+# Log bestanden
+*.log
+
+# Compressie bestanden
+*.zip
+*.rar
+*.7z
