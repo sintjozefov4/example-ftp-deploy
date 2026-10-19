@@ -33,6 +33,6 @@ Je kunt publiceren door je wijzigingen naar `main` te pushen. Bekijk daarna het 
 ## Let op
 
 - De FTP-server moet naar de juiste webmap schrijven. Controleer bij je hostingprovider welke map daarvoor bedoeld is en of je FTP-account daar toegang toe heeft.
-- De workflow sluit momenteel Git-metadata (`.git`-bestanden en -mappen) uit. Andere bestanden uit de repository kunnen ook worden meegestuurd. Pas de `exclude`-lijst in `.github/workflows/deploy.yml` aan als je extra bestanden wilt uitsluiten.
+- De workflow uploadt `.git`, `.github`, `.gitignore`, `README.md` en `AGENTS.md` niet. Deze uitsluitingen gelden ook voor gelijknamige mappen of bestanden in submappen.
 - `.gitignore` bepaalt welke bestanden Git niet toevoegt aan je repository. Het is geen lijst met bestanden die de deployment automatisch overslaat.
 - De deployment wordt alleen gestart bij een push naar `main`. Een wijziging in een andere branch wordt niet automatisch gepubliceerd.
